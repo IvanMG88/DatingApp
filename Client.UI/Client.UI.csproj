@@ -24,19 +24,33 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\app-routing.module.ts" />
+    <None Remove="ClientApp\src\app\guards\auth.guard.ts" />
     <None Remove="ClientApp\src\app\home\home.component.ts" />
+    <None Remove="ClientApp\src\app\members\member-detail\member-detail.component.ts" />
+    <None Remove="ClientApp\src\app\members\member-list\member-list.component.ts" />
     <None Remove="ClientApp\src\app\models\users.ts" />
+    <None Remove="ClientApp\src\app\modules\shared.module.ts" />
     <None Remove="ClientApp\src\app\nav\nav.component.ts" />
     <None Remove="ClientApp\src\app\register\register.component.ts" />
     <None Remove="ClientApp\src\app\services\account.service.ts" />
+    <None Remove="ClientApp\src\app\lists\lists.component.ts" />
+    <None Remove="ClientApp\src\app\messages\messages.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\guards\auth.guard.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\home.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\members\member-detail\member-detail.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\members\member-list\member-list.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\users.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\modules\shared.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\nav\nav.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\register\register.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\services\account.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\lists\lists.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\messages\messages.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

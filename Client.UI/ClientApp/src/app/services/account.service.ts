@@ -54,6 +54,5 @@ export class AccountService {
     localStorage.removeItem('user');
     this.currentUserSource.next(null);
   }
-
-
+ 
 }
